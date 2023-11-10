@@ -1,0 +1,32 @@
+public class JumbledNumber {
+
+public static void main(String[] args){
+
+    Scanner sc = new Scanner(System.in);
+
+    String str =sc.next();
+for(int i=o; i<str.length() ; i++){
+int num = Integer.parseInt(str.charAt(i));
+
+int left_different = 0;
+int right_different = 0;
+
+if(i>0){
+int left_side = Integer.parseInt(str.charAt(i-1));
+
+left_different = Math.abs(num - left_side);
+}
+if(i < str.length()){
+int right_side = Integer.parseInt(str.charAt(i+1));
+
+right_different = Math.abs(num - right_side);
+}
+if(left_different > 1 && right_different > 1){
+System.out.println(srt+"It Is Not A Jumbled Number");
+}else{
+System.out.println(str+"It Is A Jumbled Number");
+}
+}
+}
+
+}
