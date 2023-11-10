@@ -1,0 +1,19 @@
+Public class Mathematical {
+Public static void main (String[] args);
+Scanner mat = new Scanner (System.in);
+char ch = mat.next().cahrAt(0);
+
+int a = 6;
+
+int b = 8;
+
+int ch = (a*b) (a+b);
+
+if(ch>=0||ch<0){
+
+System.out.println("valid");
+
+}else{
+System.out.println("Not Valid")
+}
+}
